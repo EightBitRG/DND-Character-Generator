@@ -1,0 +1,107 @@
+h1{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.validationError{
+    color: red;
+}
+#characterEditForm{
+    border: black solid 1px;
+    background-color: #e1e1d3;
+    width: 750px;
+    display: grid;
+    grid-template-columns: 200px 200px 175px 100px 75px;
+    grid-template-rows: 75px 25px 25px 50px 25px 75px 25px;
+    padding: 5px;
+}
+button {
+    background-color: white;
+    border: black solid 1px;
+}
+fieldset {
+    width: 100px;
+    background-color: white;
+}
+#characterEditHeader, .characterEditName{
+   grid-column: span 5;
+}
+#raceSelect, #classSelect{
+    height: 75px;
+    position: relative;
+    top: 10px;
+}
+#saveBtn,#cancelBtn{
+    position: relative;
+    top: 10px;
+    left: -10px;
+    width: 75px;
+}
+.statBox{
+    height:50px;
+    align-items: center;
+    grid-column: span 5;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+}
+.statBox div label input{
+    width: 20px;
+    background-color: white;
+}
+#characterListArea {
+    width: 850px;
+    grid-template-columns: 175px 175px 175px 175px 125px;
+    padding: 10px;
+    display:none;
+}
+.grid > div:nth-child(10n + 6),
+.grid > div:nth-child(10n + 7),
+.grid > div:nth-child(10n + 8),
+.grid > div:nth-child(10n + 9),
+.grid > div:nth-child(10n + 10) {
+  background:rgba(0,0,0,0.5);
+}
+#characterListArea > div:nth-child(10n +6),
+#characterListArea > div:nth-child(10n +5),
+#characterListArea > div:nth-child(10n +4),
+#characterListArea > div:nth-child(10n +3){
+    background-color: #F4F7F5;
+}
+#characterListArea > div:nth-child(6),
+#characterListArea > div:nth-child(5),
+#characterListArea > div:nth-child(4),
+#characterListArea > div:nth-child(3){
+    background-color: #e1e1d3;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.listHeader {
+    grid-column: span 5;
+}
+.listButton{
+    grid-column: span 5;
+}
+.listButton button {
+    margin-top: 10px;
+    width: 175px;
+    height: 30px;
+    left: -10px;
+    
+}
+.listItem {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 5px;
+    text-align: left;
+}
+.characterButtons{
+    display: flex;
+    border:none;
+}
+.characterButtons button{
+    position: relative;
+    width: 62px;
+    margin-left: 10px;
+    left:-5px;
+}
+button:hover{
+    cursor: pointer;
+}

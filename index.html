@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="/js/character.js" type="text/javascript"></script>
+    <script src="/js/controller.js" type="text/javascript"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DND Character Creation</title>
+</head>
+<body>
+    <div id="characterEditArea">
+        <form name="characterEditForm" id="characterEditForm">
+            <div id="characterEditHeader"><h1 id="formTitle">Edit Character</h1></div>
+            <div class="characterEditName">
+                <label for="characterName">
+                    Name:
+                    <input type="text" name="name" id="nameEdit" />
+                </label>
+            </div>
+            <div id="nameError" class="validationError characterEditName"></div>
+            <div class="statBox">
+                <div>
+                    <label for="strength">
+                        Strength:
+                        <input class="characterStats" type="text" name="strength" id="strength" disabled="disabled"/>
+                    </label>
+                </div>
+                <div>
+                    <label for="dexterity">
+                        Dexterity:
+                        <input class="characterStats" type="text" name="dexterity" id="dexterity" disabled="disabled"/>
+                    </label>
+                </div>
+                <div>
+                    <label for="constitution">
+                        Constitution:
+                        <input class="characterStats" type="text" name="constitution" id="constitution" disabled="disabled"/>
+                    </label>
+                </div>
+                <div>
+                    <label for="intelligence">
+                        Intelligence:
+                        <input class="characterStats" type="text" name="intelligence" id="intelligence" disabled="disabled"/>
+                    </label>
+                </div>
+                <div>
+                    <label for="wisdom">
+                        Wisdom:
+                        <input class="characterStats" type="text" name="wisdom" id="wisdom" disabled="disabled"/>
+                    </label>
+                </div>
+                <div>
+                    <label for="charisma">
+                        Charisma:
+                        <input class="characterStats" type="text" name="charisma" id="charisma" disabled="disabled"/>
+                    </label>
+                </div>
+                <div><button type="button" id="rerollStatsBtn">Reroll Stats</button></div>
+            </div>
+            <div id="statError" class="validationError statBox"></div>
+            <div id="raceSelect">
+                Race:
+                <select name="raceSelecter" id="raceSelecter">
+                    
+                    <option value="0">Select Race</option>
+                    <option value="1">Dragonborn</option>
+                    <option value="2">Dwarf</option>
+                    <option value="3">Elf</option>
+                    <option value="4">Gnome</option>
+                    <option value="5">Half-Elf</option>
+                    <option value="6">Halfling</option>
+                    <option value="7">Half-Orc</option>
+                    <option value="8">Harengon</option>
+                    <option value="9">Human</option>
+                    <option value="10">Tiefling</option>
+                    <option value="11">Tortle</option>
+                    <option value="12">Owlin</option>
+                    <option value="13">Warforged</option>
+                </select>
+            </div>
+            <div id="classSelect">
+                Class:
+                <select name="classSelecter" id="classSelecter">
+                    <option value="0">Select Class</option>
+                    <option value="1">Artificer</option>
+                    <option value="2">Barbarian</option>
+                    <option value="3">Bard</option>
+                    <option value="4">Cleric</option>
+                    <option value="5">Druid</option>
+                    <option value="6">Fighter</option>
+                    <option value="7">Monk</option>
+                    <option value="8">Paladin</option>
+                    <option value="9">Ranger</option>
+                    <option value="10">Rogue</option>
+                    <option value="11">Sorcerer</option>
+                    <option value="12">Warlock</option>
+                    <option value="13">Wizard</option>
+                    
+                </select>
+            </div>
+            <div id="gender">
+                <fieldset>
+                    <legend>Gender:</legend>
+                    <label for="genderRadio0"><input type="radio" name="genderRadio" id="genderRadio0" value="0"/>Male</label><br/>
+                    <label for="genderRadio1"><input type="radio" name="genderRadio" id="genderRadio1" value="1"/>Female</label><br/>
+                </fieldset>
+            </div>
+            <div><button type="button" class ="formBtn" id="saveBtn">Save</button></div>
+            <div><button type="button" class="formBtn" id="cancelBtn">Cancel</button></div>
+            <div id="raceError" class="validationError"></div>
+            <div id="classError" class="validationError"></div>
+            <div id="genderError" class="validationError"></div>
+        </form>
+        
+    </div>
+    
+    <div id="characterListArea">
+        <div class="listHeader"><h1>Character List</h1></div>
+        <div class="listButton"><button>New Character</button></div>
+        <div class="listItem">Name</div>
+        <div class="listItem">Race</div>
+        <div class="listItem">Class</div>
+        <div class="listItem">Gender</div>
+        <div></div>
+        
+    </div>
+</body>
+</html>
